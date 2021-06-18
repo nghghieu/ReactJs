@@ -23,3 +23,10 @@ export const data3 = {
   button: 'View Case Study',
   img: profile
 }
+export const data4 = {
+  heading: 'All your data is stored on our secure server',
+  topLine: 'Secure Database',
+  desc: 'You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.',
+  button: 'Sign Up Now',
+  img: image3
+}

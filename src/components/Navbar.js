@@ -35,7 +35,7 @@ function Navbar() {
               </li>
             </ul>
             <button className="bar" onClick={clickClose}>
-              <i class={clickCl}></i>
+              <i className={clickCl}></i>
             </button>
           </nav>
         </div>
