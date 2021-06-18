@@ -1,6 +1,19 @@
 import React from 'react'
+import Navbar from './components/Navbar'
+import Products from './components/Products'
+import './css/Reset.scss'
+import './css/Global.scss'
+import { data, data2, data3 } from './data'
+
 function App() {
-  return <h1> alo alo</h1>
+  return (
+    <>
+      <Navbar />
+      <Products cssValue={'infoContent'} data={data} />
+      <Products cssValue={'infoContent'} data={data2} />
+      <Products cssValue={'infoContent light rowReverse'} data={data3} />
+    </>
+  )
 }
 
 export default App

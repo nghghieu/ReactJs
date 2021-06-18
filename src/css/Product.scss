@@ -1,0 +1,111 @@
+.infoContent {
+  background-color: black;
+  color: white;
+  padding: 160px 0;
+  &-box {
+    display: flex;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  .left,
+  .right {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .left {
+    .topLine {
+      font-size: 18px;
+      color: #a9b3c1;
+      line-height: 16px;
+      font-weight: 700;
+      -webkit-letter-spacing: 1.4px;
+      -moz-letter-spacing: 1.4px;
+      -ms-letter-spacing: 1.4px;
+      letter-spacing: 1.4px;
+    }
+    .heading {
+      margin: 15px 0 24px;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 500;
+      color: #f7f8fa;
+    }
+    .desc {
+      max-width: 440px;
+      margin-bottom: 35px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #a9b3c1;
+    }
+    .button {
+      border-radius: 4px;
+      background: #4b59f7;
+      padding: 12px 64px;
+      color: #fff;
+      font-size: 20px;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: rgb(136, 124, 240);
+      }
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1000px) {
+    padding: 50px 0;
+    .left {
+      .topLine,
+      .desc,
+      .button {
+        font-size: 15px;
+      }
+      .heading {
+        font-size: 30px;
+        max-width: 440px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 30px 0;
+    .left {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      .topLine,
+      .desc,
+      .button {
+        font-size: 15px;
+      }
+      .heading {
+        font-size: 30px;
+        max-width: 440px;
+      }
+    }
+  }
+}
+.infoContent.light {
+  background-color: white;
+
+  .left {
+    .topLine {
+      color: #4b59f7;
+      font-size: 18px;
+    }
+    .heading {
+      color: black;
+    }
+    .desc {
+      color: black;
+    }
+  }
+}
+.infoContent.rowReverse {
+  .infoContent-box {
+    flex-direction: row-reverse;
+  }
+}
