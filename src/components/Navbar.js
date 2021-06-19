@@ -14,16 +14,20 @@ function Navbar() {
       setclickNav('nav')
     }
   }
-
+  const click = () => {
+    setclickNav('nav')
+    setClickCl('fa fa-bars')
+    window.scrollTo(0, 0)
+  }
   return (
     <section>
       <div className="header">
         <div className="container">
           <nav className="header-container">
             <div className="logo">Noth'G</div>
-            <ul className={clickNav}>
+            <ul onClick={click} className={clickNav}>
               <li className="nav-item">
-                <NavLink href="/home">home</NavLink>
+                <NavLink to="/">home</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink exact={true} to="/services">
@@ -36,7 +40,7 @@ function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item btn">
-                <NavLink exact={true} to="/home">
+                <NavLink exact={true} to="/">
                   sign Up
                 </NavLink>
               </li>
