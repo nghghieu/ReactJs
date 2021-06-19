@@ -1,20 +1,25 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Products from './components/Products'
-import Services from './components/Services'
 import './css/Reset.scss'
 import './css/Global.scss'
-import { data, data2, data3, data4 } from './data'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './views/HomePage/Home'
+import Service from './views/ServicesPage/Services'
+import Product from './views/ProductsPage/Products'
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Products cssValue={'infoContent'} data={data} />
-      <Products cssValue={'infoContent'} data={data2} />
-      <Products cssValue={'infoContent light reverse '} data={data3} />
-      <Services />
-      <Products cssValue={'infoContent reverse'} data={data4} />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/services" exact component={Service} />
+          <Route path="/products" exact component={Product} />
+        </Switch>
+        <Footer />
+      </Router>
     </>
   )
 }

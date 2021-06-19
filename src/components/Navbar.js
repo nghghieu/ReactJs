@@ -22,16 +22,16 @@ function Navbar() {
             <div className="logo">Noth'G</div>
             <ul className={clickNav}>
               <li className="nav-item">
-                <a href="#">home</a>
+                <a href="/home">home</a>
               </li>
               <li className="nav-item">
-                <a href="#">services</a>
+                <a href="/services">services</a>
               </li>
               <li className="nav-item">
-                <a href="#">products</a>
+                <a href="/products">products</a>
               </li>
               <li className="nav-item btn">
-                <a href="#">sign Up</a>
+                <a href="/home">sign Up</a>
               </li>
             </ul>
             <button className="bar" onClick={clickClose}>
