@@ -1,5 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 import '../css/Footer.scss'
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -14,32 +17,67 @@ export default function Footer() {
           <div className="box-bottom">
             <div className="bottom-item">
               <h3 className="title">About us</h3>
-              <a href="#">How it works</a>
-              <a href="#">Testimonials</a>
-              <a href="#">Careers</a>
-              <a href="#">Investor</a>
-              <a href="#">Terms of Service</a>
+              <NavLink exact={true} to="/">
+                {' '}
+                How it works{' '}
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Testimonials
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Careers
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Investor
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Terms of Service
+              </NavLink>
             </div>
             <div className="bottom-item">
               <h3 className="title">Contact Us</h3>
-              <a href="#">Contact</a>
-              <a href="#">Support</a>
-              <a href="#">Destinations</a>
-              <a href="#">Sponsorships</a>
+              <NavLink exact={true} to="/">
+                Contact
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Support
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Destinations
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Sponsorships
+              </NavLink>
             </div>
             <div className="bottom-item">
               <h3 className="title">Videos</h3>
-              <a href="#">Submit Video</a>
-              <a href="#">Ambassadors</a>
-              <a href="#">Agency</a>
-              <a href="#">Influencer</a>
+              <NavLink exact={true} to="/">
+                Submit Video
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Ambassadors
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Agency
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Influencer
+              </NavLink>
             </div>
             <div className="bottom-item">
               <h3 className="title">Social Media</h3>
-              <a href="#">Instagram</a>
-              <a href="#">Facebook</a>
-              <a href="#">Youtube</a>
-              <a href="#">Twitter</a>
+              <NavLink exact={true} to="/">
+                Instagram
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Facebook
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Youtube
+              </NavLink>
+              <NavLink exact={true} to="/">
+                Twitter
+              </NavLink>
             </div>
           </div>
           <div className="box-footer">
