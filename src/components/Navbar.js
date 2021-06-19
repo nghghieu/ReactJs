@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import '../css/Navbar.scss'
 function Navbar() {
   const [clickCl, setClickCl] = useState('fa fa-bars')
@@ -22,16 +23,22 @@ function Navbar() {
             <div className="logo">Noth'G</div>
             <ul className={clickNav}>
               <li className="nav-item">
-                <a href="/home">home</a>
+                <NavLink href="/home">home</NavLink>
               </li>
               <li className="nav-item">
-                <a href="/services">services</a>
+                <NavLink exact={true} to="/services">
+                  services
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a href="/products">products</a>
+                <NavLink exact={true} to="/products">
+                  products
+                </NavLink>
               </li>
               <li className="nav-item btn">
-                <a href="/home">sign Up</a>
+                <NavLink exact={true} to="/home">
+                  sign Up
+                </NavLink>
               </li>
             </ul>
             <button className="bar" onClick={clickClose}>
